@@ -120,10 +120,10 @@
 
         MODS {
             bindings = <
-&trans       &trans            &trans          &trans          &trans                      &trans  &trans          &trans          &trans            &trans
-&mt LCTRL A  &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LEFT_GUI F  &trans  &trans      &trans  &trans  &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LEFT_SHIFT L  &mt LCTRL SQT
-&trans       &trans            &trans          &trans          &trans  &trans      &trans  &trans  &trans          &trans          &trans            &trans
-&trans       &trans            &trans          &trans          &trans  &trans      &trans  &trans                                                    &trans
+&trans       &trans            &trans          &trans          &trans                      &trans       &trans          &trans          &trans            &trans
+&mt LCTRL A  &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LEFT_GUI F  &trans  &trans      &trans  &trans       &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LEFT_SHIFT L  &mt LCTRL SQT
+&trans       &trans            &trans          &trans          &trans  &trans      &trans  &trans       &trans          &trans          &trans            &trans
+&trans       &trans            &trans          &trans          &trans  &trans      &trans  &lt 1 SPACE                                                    &trans
             >;
         };
 
