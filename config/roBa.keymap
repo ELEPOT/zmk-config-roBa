@@ -71,6 +71,19 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        gui_tab: alt_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_GUI &kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp TAB &kp LEFT_GUI>;
+
+            label = "ALT_TAB";
+        };
     };
 
     behaviors {
@@ -89,10 +102,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W        &kp E           &kp R      &kp T                      &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S        &kp D           &kp F      &kp G  &trans      &trans  &kp H            &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X        &kp C           &kp V      &kp B  &trans      &trans  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LG(TAB)  &kp LEFT_SHIFT  &kp SPACE  &mo 3  &mo 2       &mo 2   &lt 1 BACKSPACE                             &trans
+&kp Q      &kp W     &kp E           &kp R      &kp T                      &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S     &kp D           &kp F      &kp G  &trans      &trans  &kp H            &kp J  &kp K      &kp L    &kp SQT
+&kp Z      &kp X     &kp C           &kp V      &kp B  &trans      &trans  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &gui_tab  &kp LEFT_SHIFT  &kp SPACE  &mo 3  &mo 2       &mo 2   &lt 1 BACKSPACE                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -100,7 +113,7 @@
 
         EXTENSION {
             bindings = <
-&kp ESC         &kp GRAVE       &kp TAB           &trans    &trans                         &trans         &kp MINUS  &kp EQUAL          &kp ENTER        &kp DELETE
+&kp ESC         &kp GRAVE       &kp TAB           &trans    &trans                         &kp UNDER      &kp MINUS  &kp EQUAL          &kp ENTER        &kp DELETE
 &kp N1          &kp N2          &kp N3            &kp N4    &kp N5     &trans      &trans  &kp N6         &kp N7     &kp N8             &kp N9           &kp N0
 &kp LEFT_SHIFT  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LPAR  &kp COLON  &trans      &trans  &kp SEMICOLON  &kp RPAR   &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp BACKSLASH
 &trans          &trans          &trans            &trans    &trans     &trans      &trans  &trans                                                        &trans
