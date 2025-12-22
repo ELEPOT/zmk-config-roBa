@@ -13,6 +13,8 @@
     flavor = "hold-preferred";
 };
 
+&tog { toggle-mode = "off"; };
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
@@ -101,10 +103,10 @@
 
         NUM {
             bindings = <
-&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT                       &kp CARET         &kp AMPERSAND      &kp STAR        &kp LPAR         &kp RIGHT_PARENTHESIS
-&kp N1     &kp N2    &kp N3     &kp N4      &kp N5       &trans       &trans  &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
-&kp COLON  &kp PLUS  &kp EQUAL  &kp UNDER   &kp MINUS    &trans       &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&kp SEMI   &trans    &trans     &trans      &kp TAB      &kp DEL      &trans  &trans                                                                &trans
+&kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                          &kp CARET         &kp AMPERSAND      &kp STAR        &kp LPAR         &kp RIGHT_PARENTHESIS
+&kp N1    &kp N2     &kp N3     &kp N4      &kp N5       &trans        &trans    &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
+&kp SEMI  &kp COLON  &kp UNDER  &kp MINUS   &kp EQUAL    &kp PLUS      &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&trans    &trans     &trans     &trans      &kp TAB      &kp DEL       &trans    &trans                                                                &trans
             >;
         };
 
@@ -121,10 +123,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
 
