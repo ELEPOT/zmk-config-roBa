@@ -103,7 +103,7 @@
 &kp EXCL  &kp AT     &kp HASH   &kp DOLLAR  &kp PERCENT                          &kp CARET         &kp AMPERSAND      &kp STAR        &kp LPAR         &kp RIGHT_PARENTHESIS
 &kp N1    &kp N2     &kp N3     &kp N4      &kp N5       &trans        &trans    &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
 &kp SEMI  &kp COLON  &kp UNDER  &kp MINUS   &kp EQUAL    &kp PLUS      &kp PIPE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&trans    &trans     &trans     &trans      &kp TAB      &kp DEL       &trans    &trans                                                                &trans
+&trans    &trans     &trans     &kp TAB     &trans       &kp DEL       &trans    &trans                                                                &trans
             >;
         };
 
