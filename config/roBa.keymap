@@ -3,8 +3,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    flavor = "balanced";
+    flavor = "hold-preferred";
     quick-tap-ms = <0>;
+    tapping-term-ms = <0>;
 };
 
 &lt {
@@ -89,10 +90,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R           &kp T                                 &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F           &kp G      &trans             &trans  &kp H      &kp J  &kp K      &kp L    &kp SQT
-&kp Z      &kp X         &kp C         &kp V           &kp B      &trans             &trans  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE      &mo 2   &lt 1 ESC                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R           &kp T                                      &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F           &kp G      &trans             &trans       &kp H      &kp J  &kp K      &kp L    &kp SQT
+&kp Z      &kp X         &kp C         &kp V           &kp B      &trans             &trans       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp BACKSPACE      &lt 2 ENTER  &lt 1 ESC                             &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -100,10 +101,10 @@
 
         NUM {
             bindings = <
-&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT                      &kp CARET         &kp AMPERSAND      &kp STAR        &kp LPAR         &kp RIGHT_PARENTHESIS
-&kp N1     &kp N2    &kp N3     &kp N4      &kp N5       &trans      &trans  &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
-&kp COLON  &kp PLUS  &kp EQUAL  &kp UNDER   &kp MINUS    &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
-&kp SEMI   &trans    &trans     &trans      &trans       &trans      &trans  &trans                                                                &kp PIPE
+&kp EXCL   &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT                       &kp CARET         &kp AMPERSAND      &kp STAR        &kp LPAR         &kp RIGHT_PARENTHESIS
+&kp N1     &kp N2    &kp N3     &kp N4      &kp N5       &trans       &trans  &kp N6            &kp N7             &kp N8          &kp N9           &kp N0
+&kp COLON  &kp PLUS  &kp EQUAL  &kp UNDER   &kp MINUS    &trans       &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&kp SEMI   &trans    &trans     &trans      &kp TAB      &kp DEL      &trans  &trans                                                                &trans
             >;
         };
 
