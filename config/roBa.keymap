@@ -2,15 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-&mt {
-    flavor = "hold-preferred";
-    quick-tap-ms = <0>;
-    tapping-term-ms = <0>;
-};
+&mt { retro-tap; };
 
 &lt {
     tapping-term-ms = <0>;
     flavor = "hold-preferred";
+    retro-tap;
 };
 
 &tog { toggle-mode = "off"; };
@@ -47,7 +44,7 @@
         };
 
         scroll {
-            bindings = <&mo 6>;
+            bindings = <&mo 5>;
             key-positions = <8 7>;
         };
 
@@ -133,7 +130,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 4
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
