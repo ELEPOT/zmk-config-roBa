@@ -105,7 +105,7 @@
 &kp Q      &kp W         &kp E         &kp R      &kp T                                 &kp Y  &kp U  &kp I    &kp O          &kp P
 &kp A      &kp S         &kp D         &kp F      &kp G       &kp MINUS      &kp COMMA  &kp H  &kp J  &kp K    &kp L          &lt 2 ENTER
 &kp Z      &kp X         &kp C         &kp V      &kp B       &kp UNDER      &kp DOT    &kp N  &kp M  &kp ESC  &kp BACKSPACE  &kp TAB
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp LSHIFT  &kp TAB        &trans     &mo 1                                 &kp DEL
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp LSHIFT  &kp TAB        &mo 3      &mo 1                                 &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -120,7 +120,7 @@
             >;
         };
 
-        ARROW+FUNCTION {
+        ARROW+NUMPAD {
             bindings = <
 &kp KP_N7        &kp KP_N8  &kp KP_N9  &kp KP_DOT   &kp KP_DIVIDE                        &kp KP_NUMLOCK  &kp PRINTSCREEN  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
 &kp KP_NUMBER_4  &kp KP_N5  &kp KP_N6  &kp KP_N0    &kp KP_MULTIPLY  &trans      &trans  &kp LEFT        &kp DOWN         &kp UP             &kp RIGHT        &trans
@@ -131,21 +131,21 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MODS {
+        FUNCTIONS+NUMROW {
             bindings = <
-&trans       &trans            &trans          &trans          &trans                      &trans       &trans          &trans          &trans            &trans
-&mt LCTRL A  &mt LEFT_SHIFT S  &mt LEFT_ALT D  &mt LEFT_GUI F  &trans  &trans      &trans  &trans       &mt LEFT_GUI J  &mt LEFT_ALT K  &mt LEFT_SHIFT L  &mt LCTRL SQT
-&trans       &trans            &trans          &trans          &trans  &trans      &trans  &trans       &trans          &trans          &trans            &trans
-&trans       &trans            &trans          &trans          &trans  &trans      &trans  &lt 1 SPACE                                                    &trans
+&kp F1  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans   &kp F12
+&kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans      &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans      &trans  &kp N6  &kp N7  &kp N8  &kp N9   &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                           &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &tog 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
         };
 
