@@ -38,14 +38,9 @@
             key-positions = <11 12>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
         scroll {
             bindings = <&mo 5>;
-            key-positions = <8 7>;
+            key-positions = <20 19>;
         };
 
         left_click {
@@ -61,6 +56,11 @@
         middle_click {
             bindings = <&mkp MCLK>;
             key-positions = <18 20>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -103,9 +103,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R      &kp T                                 &kp Y  &kp U  &kp I    &kp O          &kp P
-&kp A      &kp S         &kp D         &kp F      &kp G       &kp MINUS      &kp COMMA  &kp H  &kp J  &kp K    &kp L          &lt 2 ENTER
+&kp A      &kp S         &kp D         &kp F      &kp G       &kp MINUS      &kp COMMA  &kp H  &kp J  &kp K    &kp L          &kp ENTER
 &kp Z      &kp X         &kp C         &kp V      &kp B       &kp UNDER      &kp DOT    &kp N  &kp M  &kp ESC  &kp BACKSPACE  &kp TAB
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp LSHIFT  &kp TAB        &mo 3      &mo 1                                 &kp DEL
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp LSHIFT  &mo 3          &mo 2      &mo 1                                 &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -142,10 +142,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
